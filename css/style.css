@@ -83,3 +83,24 @@ html {
     background-image: url("../images/signals.jpeg");
     min-height: 50%;
 }
+
+.bgimg-women {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/women.jpg");
+    min-height: 50%;
+}
+
+.bgimg-water {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/water.jpg");
+    min-height: 50%;
+}
+
+.bgimg-peace {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/peace.jpg");
+    min-height: 50%;
+}
