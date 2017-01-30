@@ -147,3 +147,17 @@ html {
 .tk-hover-text-green:hover {
     color: #95d936!important
 }
+
+.tk-text-red,
+.tk-hover-text-red:hover,
+.tk-text-red,
+.tk-hover-text-red:hover {
+    color: #d93646!important
+}
+
+.tk-text-blue,
+.tk-hover-text-blue:hover,
+.tk-text-blue,
+.tk-hover-text-blue:hover {
+    color: #36a9d8!important
+}
