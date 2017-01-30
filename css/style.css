@@ -40,21 +40,22 @@ html {
 
 .tk-red,
 .tk-hover-red:hover {
-    color: #fff!important;
+    color: black!important;
     background-color: #c01d2e!important
 }
 
 .tk-green,
 .tk-hover-green:hover {
-    color: #fff!important;
+    color: black!important;
     background-color: #9ac959!important
 }
 
 .tk-blue,
 .tk-hover-blue:hover {
-    color: #fff!important;
+    color: black!important;
     background-color: #5abbe2!important
 }
+
 .visioncard {
     min-height: 400px;
 }
