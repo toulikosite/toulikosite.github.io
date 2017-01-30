@@ -32,6 +32,7 @@ html {
     background-size: cover;
     background-image: url("../images/solarpanels.jpeg");
     min-height: 100%;
+    filter: blur(3px);
 }
 
 .w3-navbar li a {
