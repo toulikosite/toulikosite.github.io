@@ -63,3 +63,6 @@ html {
 .tk-blue-hover:hover {
     background-color: #36a9d8!important;
 }
+.content-image {
+    max-width:100%;height:auto;
+}
