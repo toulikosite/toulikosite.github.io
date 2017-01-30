@@ -59,3 +59,7 @@ html {
 .visioncard {
     min-height: 400px;
 }
+
+.tk-blue-hover:hover {
+    background-color: #5abbe2!important;
+}
