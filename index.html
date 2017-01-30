@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Touliko</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -137,95 +137,95 @@
             </div>
         </div>
 
+    </div>
 
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-128 w3-white" id="contact">
+        <h3 class="w3-center">Contact</h3>
 
-        <!-- Contact Section -->
-        <div class="w3-container w3-padding-128 w3-white" id="contact">
-            <h3 class="w3-center">Contact</h3>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-half">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+                <br>
+                <form action="form.asp" target="_blank">
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    </p>
+                    <p>
+                        <button class="w3-btn w3-padding" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="w3-half">
 
-            <div class="w3-row-padding" style="margin-top:64px">
-                <div class="w3-half">
-                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-                    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-                    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-                    <br>
-                    <form action="form.asp" target="_blank">
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
-                        </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        </p>
-                        <p>
-                            <button class="w3-btn w3-padding" type="submit">
-                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                            </button>
-                        </p>
-                    </form>
-                </div>
-                <div class="w3-half">
-
-                </div>
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="w3-center tk-blue w3-padding-64">
+    <!-- Footer -->
+    <footer class="w3-center tk-blue w3-padding-64">
 
-            <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
-                <i class="fa fa-flickr w3-hover-text-red"></i>
-                <i class="fa fa-instagram w3-hover-text-purple"></i>
-                <i class="fa fa-twitter w3-hover-text-light-blue"></i>
-                <i class="fa fa-linkedin w3-hover-text-indigo"></i>
-            </div>
-            <p>Touliko © 2017</p>
-        </footer>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+            <i class="fa fa-flickr w3-hover-text-red"></i>
+            <i class="fa fa-instagram w3-hover-text-purple"></i>
+            <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+            <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+        </div>
+        <p>Touliko © 2017</p>
+    </footer>
 
 
 
-        <script>
-            // Used to toggle the menu on small screens when clicking on the menu button
-            function myFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
             }
+        }
 
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidenav when clicking the menu icon
+        var mySidenav = document.getElementById("mySidenav");
+
+        function w3_open() {
+            if (mySidenav.style.display === 'block') {
+                mySidenav.style.display = 'none';
+            } else {
+                mySidenav.style.display = 'block';
             }
+        }
 
-
-            // Toggle between showing and hiding the sidenav when clicking the menu icon
-            var mySidenav = document.getElementById("mySidenav");
-
-            function w3_open() {
-                if (mySidenav.style.display === 'block') {
-                    mySidenav.style.display = 'none';
-                } else {
-                    mySidenav.style.display = 'block';
-                }
-            }
-
-            // Close the sidenav with the close button
-            function w3_close() {
-                mySidenav.style.display = "none";
-            }
-        </script>
+        // Close the sidenav with the close button
+        function w3_close() {
+            mySidenav.style.display = "none";
+        }
+    </script>
 
 </body>
 
