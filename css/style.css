@@ -41,19 +41,19 @@ html {
 .tk-red,
 .tk-hover-red:hover {
     color: black!important;
-    background-color: #c01d2e!important
+    background-color: #d93646!important
 }
 
 .tk-green,
 .tk-hover-green:hover {
     color: black!important;
-    background-color: #9ac959!important
+    background-color: #95d936!important
 }
 
 .tk-blue,
 .tk-hover-blue:hover {
     color: black!important;
-    background-color: #5abbe2!important
+    background-color: #36a9d8!important
 }
 
 .visioncard {
@@ -61,5 +61,5 @@ html {
 }
 
 .tk-blue-hover:hover {
-    background-color: #5abbe2!important;
+    background-color: #36a9d8!important;
 }
