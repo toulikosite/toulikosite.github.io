@@ -139,3 +139,10 @@ html {
     background-image: url("../images/electricalpostwide.jpeg");
     min-height: 50%;
 }
+
+.tk-text-green,
+.tk-hover-text-green:hover,
+.tk-text-green,
+.tk-hover-text-green:hover {
+    color: #95d936!important
+}
