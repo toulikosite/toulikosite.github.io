@@ -51,7 +51,8 @@ html {
 }
 
 .tk-blue,
-.tk-hover-blue:hover {
+.tk-blue-hover:hover,
+.tk-blue-hover:hover a:hover {
     color: #f1f1f1!important;
     background-color: #36a9d8!important
 }
@@ -60,9 +61,18 @@ html {
     min-height: 400px;
 }
 
-.tk-blue-hover:hover {
-    background-color: #36a9d8!important;
-}
 .content-image {
-    max-width:100%;height:auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.w3-dropdown-content a:hover {
+    background-color: #95d936!important
+}
+
+.bgimg-pm {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/projectmangement.jpg");
+    min-height: 50%;
 }
