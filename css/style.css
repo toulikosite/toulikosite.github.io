@@ -76,3 +76,10 @@ html {
     background-image: url("../images/projectmangement.jpg");
     min-height: 50%;
 }
+
+.bgimg-research {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/signals.jpeg");
+    min-height: 50%;
+}
