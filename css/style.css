@@ -161,3 +161,8 @@ html {
 .tk-hover-text-blue:hover {
     color: #36a9d8!important
 }
+
+.tk-sidenav a:hover {
+    color: whitesmoke;
+    background-color: #36a9d8;
+}
