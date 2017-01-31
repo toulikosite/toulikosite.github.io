@@ -176,3 +176,20 @@ html {
 
 
 }
+.logo_holder {
+    min-height: 200px;
+    position: relative;
+    outline: 1px dotted red;
+}
+.logo {
+    width: 26.4px;
+    height: 26.4px;
+    position: relative;
+    background: url("../images/logo.png")no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.logo-button {
+    white-space: nowrap;
+    padding-right: 64px;
+}
