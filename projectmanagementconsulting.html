@@ -14,14 +14,14 @@
     <div class="w3-top">
         <ul class="w3-navbar w3-white w3-card-2 w3-left-align">
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a class="w3-padding-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             </li>
             <li>
                 <a href="index.html#home" class="w3-wide">TOULIKO</a>
             </li>
             <div class="w3-right">
 
-                <li><a href="index.html#about" class="w3-hover-none tk-blue-hover w3-padding-large">About</a></li>
+                <li class="w3-hide-small"><a href="index.html#about" class="w3-hover-none tk-blue-hover w3-padding-large">About</a></li>
 
                 <li class="w3-hide-small w3-dropdown-hover">
                     <a href="javascript:void(0)" class="w3-hover-none w3-padding-large  tk-blue-hover" title="More">Services <i class="fa fa-caret-down"></i></a>
@@ -47,24 +47,20 @@
             </div>
         </ul>
     </div>
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <ul class="w3-navbar w3-left-align w3-black">
-            <li><a class="w3-padding-large" href="#band">Services</a></li>
-            <li><a class="w3-padding-large" href="#tour">Programs</a></li>
-            <li><a class="w3-padding-large" href="#contact">Research</a></li>
-            <li><a class="w3-padding-large" href="#">Career/Internships</a></li>
-        </ul>
-    </div>
-
     <!-- Sidenav on small screens when clicking the menu icon -->
-    <nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
-        <a href="#about" onclick="w3_close()">ABOUT</a>
-        <a href="#team" onclick="w3_close()">TEAM</a>
-        <a href="#work" onclick="w3_close()">WORK</a>
-        <a href="#pricing" onclick="w3_close()">PRICING</a>
-        <a href="#contact" onclick="w3_close()">CONTACT</a>
+    <nav class="w3-sidenav tk-sidenav tk-green w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16 w3-light-grey">Close ×</a>
+        <a href="index.html#about" onclick="w3_close()">About</a>
+        <a href="electricalengineering.html">Electrical Engineering</a>
+        <a href="civilengineering.html">Civil Engineering</a>
+        <a href="mechanicalengineering.html">Mechanical Engineering</a>
+        <a href="informationtechnologyservices.html">Information Technology Services</a>
+        <a href="projectmanagementconsulting.html">Project Management Consulting</a>
+        <a href="women.html">Women Empowerment Program(WEP)</a>
+        <a href="waterandenergy.html">Water and Energy</a>
+        <a href="engineeringpeace.html">Engineering Peace and Justice</a>
+        <a href="contact.html">Contact</a>
+        <a href="careers.html">Careers/Internships</a>
     </nav>
 
     <!-- Header with full-height image -->
