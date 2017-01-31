@@ -166,3 +166,13 @@ html {
     color: whitesmoke;
     background-color: #36a9d8;
 }
+
+.bgimg-careers {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/careers.jpg");
+    min-height: 50%;
+}
+
+
+}
