@@ -30,7 +30,7 @@ html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("../images/solarpanels.jpeg");
+    background-image: url("../images/city.jpg");
     min-height: 100%;
 }
 
@@ -188,4 +188,10 @@ html {
 .logo-button {
     white-space: nowrap!important;
     padding-right: 64px!important;
+}
+
+
+#home {
+     -webkit-transition: all 0.75s;
+     transition: all 0.75s;
 }

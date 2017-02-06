@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <body>
     <!-- Navbar -->
@@ -72,7 +73,7 @@
     </nav>
 
     <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container " id="home">
+    <header class="bgimg-1 w3-display-container w3-greyscale-min" id="home">
         <div>
             <div class="w3-display-left w3-padding-xxlarge w3-text-white">
                 <div class=" w3-white  w3-card w3-padding-xlarge w3-jumbo w3-hide-small">Changing the world?</div>
@@ -80,7 +81,7 @@
                 <div class=" w3-white w3-card w3-container w3-xxlarge w3-hide-large w3-hide-medium">Changing the world?</div>
                 <br>
 
-                <p><a href="/about.html" class=" w3-btn w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">We can help.</a></p>
+                <p><a href="about.html" id="help" class=" w3-btn w3-white w3-padding-large w3-large w3-margin-top w3-opacity-min w3-hover-opacity-off">We can help.</a></p>
 
 
             </div>
@@ -108,7 +109,18 @@
 
 
     <script src="js/tk-js.js"></script>
+    <script>
+        $(document).ready(function () {
 
+            $('#help').hover(function () {
+                $(this).parent().parent().parent().parent().toggleClass('w3-greyscale-min');
+            }, function () {
+                $(this).parent().parent().parent().parent().toggleClass('w3-greyscale-min');
+            });
+
+
+        });
+    </script>
 
 </body>
 
