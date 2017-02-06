@@ -8,6 +8,89 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+    .cards {}
+    
+    .cards .card {
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: all 0.3s;
+    }
+    
+    .cards .card .card-header {
+        position: relative;
+    }
+    
+    .cards .card .card-header button.card-expand {
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 10px;
+        vertical-align: middle;
+        height: 39px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .cards .card .card-header button.card-expand:hover {
+        background-color: #F9F9F9;
+    }
+    
+    .cards .card .card-header button.card-expand .expand {
+        display: block;
+    }
+    
+    .cards .card .card-header button.card-expand .close {
+        display: none;
+    }
+    
+    .cards .card .card-footer {
+        border-top: 1px solid #eee;
+        text-transform: uppercase;
+    }
+    
+    .cards .card .card-footer a {
+        color: #757575;
+        text-decoration: none;
+    }
+    
+    .cards .card .card-body,
+    .cards .card .card-footer {
+        padding: 10px;
+    }
+    
+    .cards .card .card-inner {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    
+    .cards .card.expanded {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    
+    .cards .card.expanded .card-inner {
+        max-height: 900px;
+    }
+    
+    .cards .card.expanded button.card-expand .expand {
+        display: none;
+    }
+    
+    .cards .card.expanded button.card-expand .close {
+        display: block;
+    }
+    
+    .cards .card.expanded .card-header {
+        border-bottom: 1px solid #eee;
+    }
+</style>
+
 
 <body>
     <!-- Navbar -->
@@ -97,64 +180,81 @@
                 <p></p>
             </div>
             <div class="w3-col m8 l8">
-
-
                 <h1 class="w3-center">Available Positions</h1>
-                <div class="w3-card-2 w3-sand w3-panel">
-                    <h2><b>Civil Engineer</b></h2>
-                    <hr>
-                    <h3>Employment type</h3>
-                    <span>Full-time</span>
-                    <h3> Experience </h3>
-                    <span>Entry level </span>
-                    <h3>Job function </h3>
-                    <span>Engineering,Information Technology </span>
-                    <h3>Location</h3>
-                    <span>Palestine</span>
-                    <h3>Minimum Qualifications</h3>
-                    <p>A bachelor's degree in civil engineering. A working knowledge of the construction/renovation process and federal, state and local building codes is required. Experience with building roof programs and project management, and building site utilities is preferred.</p>
-                </div>
-                <div class="w3-card-2 w3-sand w3-panel">
-                    <h2><b>Electrical Engineer</b></h2>
-                    <hr>
-                    <h3>Employment type</h3>
-                    <span>Full-time</span>
-                    <h3> Experience </h3>
-                    <span>Entry level </span>
-                    <h3>Job function </h3>
-                    <span>Engineering</span>
-                    <h3>Location</h3>
-                    <span>Palestine</span>
-                    <h3>Desired Skills and Experience</h3>
-                    <ul>
-                        <li>BS or Masters in Electrical Engineering</li>
-                        <li>0-2 years of relevant experience</li>
-                        <li>Understanding of the electrical design process</li>
-                        <li>Experience with Motherboard architecture and development</li>
-                        <li>Knowledge of electrical theory of operation for active and passive components</li>
-                        <li>Knowledge of basic digital and analog design concepts</li>
-                        <li>Knowledge of embedded system design</li>
-                        <li>Knowledge of serial communications standards and interfaces</li>
-                        <li>Digital systems design</li>
-                        <li>Good written and communication skills</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w3-col m2 l2">
-                <p></p>
-            </div>
-        </div>
-        <p style="margin-bottom:8px"></p>
-        <div class="w3-row">
-            <div class="w3-col m2 l2">
-                <p></p>
-            </div>
+                <div class='cards'>
+                    <div class="card w3-card-2 w3-sand w3-panel">
+                        <div class='card-header'>
+                            <h2><b>Civil Engineer</b></h2>
+                            <button class='card-expand'>
+                                <i class="material-icons expand fa fa-arrow-down" aria-hidden="true"></i>
+                                <i class="material-icons close fa fa-arrow-up" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class='card-inner'>
+                            <div class='card-body'>
+                                <h3>Employment type</h3>
+                                <span>Full-time</span>
+                                <h3> Experience </h3>
+                                <span>Entry level </span>
+                                <h3>Job function </h3>
+                                <span>Engineering,Information Technology </span>
+                                <h3>Location</h3>
+                                <span>Palestine</span>
+                                <h3>Minimum Qualifications</h3>
+                                <p>A bachelor's degree in civil engineering. A working knowledge of the construction/renovation process and federal, state and local building codes is required. Experience with building roof programs and project management, and building site utilities is preferred.</p>
+                            </div>
+                            <div class='card-footer'>
+                                <a href="mailto:info@touliko.com" target="_top">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="w3-col m2 l2">
-                <p></p>
+                    <div class="card w3-card-2 w3-sand w3-panel">
+                        <div class='card-header'>
+                            <h2><b>Electrical Engineer</b></h2>
+                            <button class='card-expand'>
+                                <i class="material-icons expand fa fa-arrow-down" aria-hidden="true"></i>
+                                <i class="material-icons close fa fa-arrow-up" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class='card-inner'>
+                            <div class='card-body'>
+                                <h3>Employment type</h3>
+                                <span>Full-time</span>
+                                <h3> Experience </h3>
+                                <span>Entry level </span>
+                                <h3>Job function </h3>
+                                <span>Engineering</span>
+                                <h3>Location</h3>
+                                <span>Palestine</span>
+                                <h3>Desired Skills and Experience</h3>
+                                <ul>
+                                    <li>BS or Masters in Electrical Engineering</li>
+                                    <li>0-2 years of relevant experience</li>
+                                    <li>Understanding of the electrical design process</li>
+                                    <li>Experience with Motherboard architecture and development</li>
+                                    <li>Knowledge of electrical theory of operation for active and passive components</li>
+                                    <li>Knowledge of basic digital and analog design concepts</li>
+                                    <li>Knowledge of embedded system design</li>
+                                    <li>Knowledge of serial communications standards and interfaces</li>
+                                    <li>Digital systems design</li>
+                                    <li>Good written and communication skills</li>
+                                </ul>
+                            </div>
+                            <div class='card-footer'>
+                                <a href="mailto:info@touliko.com" target="_top">Apply Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="w3-col m2 l2">
+                        <p></p>
+                    </div>
+                    <p style="margin-bottom:8px"></p>
+
+                </div>
             </div>
         </div>
-        <p style="margin-bottom:8px"></p>
     </div>
     <!-- Footer -->
     <footer class="w3-center tk-blue w3-padding-32">
@@ -172,7 +272,14 @@
 
 
     <script src="js/tk-js.js"></script>
+    <script>
+        $('.card-expand').click(function () {
+            $(this).parent().parent().toggleClass('expanded');
+        });
 
+        var cardHeight = $('.card.expanded').innerHeight();
+        $('.card.expanded .card-inner').css('max-height', cardHeight);
+    </script>
 </body>
 
 </html>
