@@ -89,6 +89,10 @@
     .cards .card.expanded .card-header {
         border-bottom: 1px solid #eee;
     }
+    
+    .card-header {
+        cursor: pointer;
+    }
 </style>
 
 
@@ -273,12 +277,15 @@
 
     <script src="js/tk-js.js"></script>
     <script>
-        $('.card-expand').click(function () {
-            $(this).parent().parent().toggleClass('expanded');
-        });
+        $(document).ready(function () {
 
-        var cardHeight = $('.card.expanded').innerHeight();
-        $('.card.expanded .card-inner').css('max-height', cardHeight);
+            $('.card-header').click(function () {
+                $(this).parent().toggleClass('expanded');
+            });
+
+            var cardHeight = $('.card.expanded').innerHeight();
+            $('.card.expanded .card-inner').css('max-height', cardHeight);
+        });
     </script>
 </body>
 
