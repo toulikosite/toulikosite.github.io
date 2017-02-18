@@ -40,7 +40,7 @@ html {
 
 .tk-red,
 .tk-hover-red:hover {
-    color: black!important;
+    color: white!important;
     background-color: #d93646!important
 }
 
@@ -192,3 +192,11 @@ html {
 
 
 
+
+.w3-display-left {
+    top:30%;
+}
+
+.w3-display-right {
+    top: 30%;
+}
