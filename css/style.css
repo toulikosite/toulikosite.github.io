@@ -200,3 +200,7 @@ html {
 .w3-display-right {
     top: 30%;
 }
+
+.front-page-text {
+    display:inline-block;
+}
